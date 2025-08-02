@@ -1,3 +1,4 @@
+import 'package:alertme_tv/infopage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -60,8 +61,11 @@ class WelcomePage extends StatelessWidget {
 
               ElevatedButton(
                 onPressed: () {
-
-                },
+                Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const InfoPage()),
+            );
+      },
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(
                       horizontal: 60, vertical: 20),
